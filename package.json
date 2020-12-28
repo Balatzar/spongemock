@@ -1,10 +1,11 @@
 {
   "name": "spongemocker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple package to mockify some text (\"liKe tHiS fOr eXeMpLe\")",
   "main": "index.js",
   "scripts": {
-    "test": "mocha index.test.js"
+    "test": "mocha index.test.js",
+    "publish": "npm test && npm publish"
   },
   "author": "",
   "license": "ISC",

@@ -19,18 +19,22 @@ describe("basic assert", function () {
   });
 
   it("Ugly char in second position", function () {
-    assert.equal("liGhT", mockify("light"));
+    assert.equal("LigHt", mockify("light"));
   });
 
   it("Ugly char in second position in sentence", function () {
-    assert.equal("tHe liGhT", mockify("the light"));
+    assert.equal("tHe LigHt", mockify("the light"));
   });
 
   it("Don't capitalize the first letter of a word", function () {
-    assert.equal("tHeY liGhT", mockify("they light"));
+    assert.equal("tHeY LigHt", mockify("they light"));
   });
 
   it("Weird chars", function () {
     assert.equal("pEuT-ÊtRe qU'iL", mockify("peut-être qu'il"));
+  });
+
+  it("L's should not be lowercase", function () {
+    assert.equal("hOLA qUé tAL", mockify("hola qué tal"));
   });
 });
