@@ -1,7 +1,6 @@
 const uglies = ["i"];
 
 const mockify = function (text = "") {
-  console.log(text);
   let i = 0;
   return text
     .split("")
